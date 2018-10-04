@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">solleza-FeelsBook</string>
+    <string name="app_name">FeelsBook</string>
+
+    <string name="edit_comment">Enter a comment (optional)</string>
+
+    <string name="button_love">LOVE</string>
+    <string name="button_joy">JOY</string>
+    <string name="button_surprise">SURPRISE</string>
+    <string name="button_anger">ANGER</string>
+    <string name="button_sadness">SADNESS</string>
+    <string name="button_fear">FEAR</string>
+
+    <string name="button_history">View History</string>
 </resources>
