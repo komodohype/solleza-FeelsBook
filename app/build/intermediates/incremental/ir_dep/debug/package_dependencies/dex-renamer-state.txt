@@ -1,0 +1,4 @@
+#Fri Oct 05 14:26:57 MDT 2018
+base.0=C\:\\Users\\pauls\\AndroidStudioProjects\\sollezaFeelsBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\113
+path.0=classes.dex
+renamed.0=classes.dex
