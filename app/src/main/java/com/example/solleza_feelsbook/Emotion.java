@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Emotion {
     private Date date;
-    private String comment;
+    private String comment = new String("");
 
     private SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd'T'hh:mm:ss");
 
@@ -28,4 +28,7 @@ public class Emotion {
         return this.comment;
     }
 
+    public String getDateString() {
+        return ft.format(this.date);
+    }
 }
