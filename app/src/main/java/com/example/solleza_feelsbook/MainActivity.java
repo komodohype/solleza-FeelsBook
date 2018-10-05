@@ -137,7 +137,12 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void viewStatistics(View view) {}
+    public void viewStatistics(View view) {
+        Intent intent = new Intent(this, TallyActivity.class);
+        String message = FILENAME;
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
 
     public void viewHistory(View view) {
         Intent intent = new Intent(this, HistoryActivity.class);

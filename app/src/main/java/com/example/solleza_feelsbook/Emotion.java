@@ -28,6 +28,10 @@ public class Emotion {
         this.comment = comment;
     }
 
+    public String getType() {
+        return this.type;
+    }
+
     public Date getDate() {
         return this.date;
     }
