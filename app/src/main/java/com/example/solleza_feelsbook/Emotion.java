@@ -31,4 +31,8 @@ public class Emotion {
     public String getDateString() {
         return ft.format(this.date);
     }
+
+    public String toString() {
+        return getDateString() + " | Emotion | " + this.comment;
+    }
 }

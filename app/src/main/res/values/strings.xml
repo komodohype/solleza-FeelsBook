@@ -13,6 +13,7 @@
     <string name="button_tally">View Statistics</string>
     <string name="button_history">View History</string>
 
+    <string name="history_header">History</string>
     <string name="button_view">View and Edit</string>
 
     <string name="button_edit">Edit</string>
