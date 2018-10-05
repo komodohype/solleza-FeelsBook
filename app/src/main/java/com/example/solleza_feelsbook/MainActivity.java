@@ -54,29 +54,35 @@ public class MainActivity extends Activity {
         EditText commentText = findViewById(R.id.commentText);
         String comment = commentText.getText().toString();
 
-        Emotion emotion;
+        Emotion emotion = new Emotion();
 
         switch(view.getId()) {
             case R.id.loveButton :
-                emotion = new Love();
+                emotion.setType("Love");
+                // emotion = new Love();
                 break;
             case R.id.joyButton :
-                emotion = new Joy();
+                emotion.setType("Joy");
+                // emotion = new Joy();
                 break;
             case R.id.surpriseButton :
-                emotion = new Surprise();
+                emotion.setType("Surprise");
+                // emotion = new Surprise();
                 break;
             case R.id.angerButton :
-                emotion = new Anger();
+                emotion.setType("Anger");
+                // emotion = new Anger();
                 break;
             case R.id.sadnessButton :
-                emotion = new Sadness();
+                emotion.setType("Sadness");
+                // emotion = new Sadness();
                 break;
             case R.id.fearButton :
-                emotion = new Fear();
+                emotion.setType("Fear");
+                // emotion = new Fear();
                 break;
             default :
-                emotion = new Emotion();
+                break;
         }
 
         try {
@@ -122,7 +128,6 @@ public class MainActivity extends Activity {
             Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
 
             Type type = new TypeToken<ArrayList<Emotion>>(){}.getType();
-
             emotions = gson.fromJson(reader, type);
         } catch (FileNotFoundException e) {
             emotions = new ArrayList<>();

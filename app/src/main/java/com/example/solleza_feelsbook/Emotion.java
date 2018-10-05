@@ -3,11 +3,19 @@ package com.example.solleza_feelsbook;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/*
+ * @TODO: decompose to subclasses: Anger, Fear, Joy, Love, Sadness, Surprise
+ */
 public class Emotion {
+    private String type;
     private Date date;
     private String comment = new String("");
 
     private SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd'T'hh:mm:ss");
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public void setDate(Date date) {
         this.date = date;
@@ -33,6 +41,6 @@ public class Emotion {
     }
 
     public String toString() {
-        return getDateString() + " | Emotion | " + this.comment;
+        return getDateString() + " | " + this.type + " | " + this.comment;
     }
 }

@@ -48,7 +48,6 @@ public class HistoryActivity extends AppCompatActivity {
             Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
 
             Type type = new TypeToken<ArrayList<Emotion>>(){}.getType();
-
             emotions = gson.fromJson(reader, type);
         } catch (FileNotFoundException e) {
             emotions = new ArrayList<>();
