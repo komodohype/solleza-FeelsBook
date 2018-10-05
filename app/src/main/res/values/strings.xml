@@ -10,5 +10,15 @@
     <string name="button_sadness">SADNESS</string>
     <string name="button_fear">FEAR</string>
 
+    <string name="button_tally">View Statistics</string>
     <string name="button_history">View History</string>
+
+    <string name="button_view">VIEW</string>
+    <string name="button_back">BACK</string>
+
+    <string name="button_edit">EDIT</string>
+    <string name="button_delete">DELETE</string>
+
+    <string name="button_save">SAVE</string>
+    <string name="button_cancel">CANCEL</string>
 </resources>
